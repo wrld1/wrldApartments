@@ -112,10 +112,10 @@ const RentModal = () => {
 
   const actionLabel = useMemo(() => {
     if (step === STEPS.PRICE) {
-      return "Create";
+      return "Створити";
     }
 
-    return "Next";
+    return "Далі";
   }, [step]);
 
   const secondaryActionLabel = useMemo(() => {
@@ -123,7 +123,7 @@ const RentModal = () => {
       return undefined;
     }
 
-    return "Back";
+    return "Назад";
   }, [step]);
 
   let bodyContent = (
@@ -160,7 +160,7 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="ДЕ розташоване ваше місце?"
+          title="Де розташоване ваше місце?"
           subtitle="Допоможіть гостям знайти вас!"
         />
         <CountrySelect
